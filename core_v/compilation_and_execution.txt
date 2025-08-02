@@ -1,0 +1,49 @@
+Before Execution of a C++ Program, the following steps occur:
+
+1. Preprocessing:
+   - Handled by the preprocessor.
+   - It processes all lines starting with '#' like #include, #define, etc.
+   - Replaces header files and macros.
+   - Removes comments and expands macros.
+   - Output: A preprocessed file with all headers/macros expanded (e.g., main.i)
+   - Command: g++ -E main.cpp -o main.i
+
+2. Compilation:
+   - Handled by the compiler.
+   - Converts preprocessed C++ code into assembly language.
+   - Checks syntax and types, performs optimizations.
+   - Output: Assembly file (e.g., main.s)
+   - Command: g++ -S main.i -o main.s
+
+3. Assembly:
+   - Handled by the assembler.
+   - Converts assembly code into machine-level binary (object code).
+   - This is not yet executable.
+   - Output: Object file (e.g., main.o)
+   - Command: g++ -c main.s -o main.o
+
+4. Linking:
+   - Handled by the linker.
+   - Combines object files and libraries into a single executable file.
+   - Resolves function calls and global variables.
+   - Adds startup and runtime code.
+   - Output: Executable file (e.g., main.exe or ./main)
+   - Command: g++ main.o -o main
+
+5. Execution:
+   - Handled by the operating system.
+   - Loads the executable into memory.
+   - Sets up stack, heap, registers, etc.
+   - Starts execution from main().
+   - Program runs and shows output.
+   - Command: ./main or main.exe
+
+Summary of Output Files:
+- After Preprocessing: main.i
+- After Compilation: main.s
+- After Assembly: main.o
+- After Linking: main or main.exe
+- After Execution: Program runs and gives output.
+
+Finaly to directly compile and run the program we use the following command:
+    g++ -std=c++20 main.cpp -o main && ./main

@@ -1,0 +1,14 @@
+Errors and Warnings:
+
+1. Comile Time Errors:
+    When there is syntax error in our code.
+
+2. Run Time Errors:
+    when the syntax is correct but there is logical flaw in your code, then you will encounter  this error.
+    For Example: 
+    1. dividing by zero (Arthematic error)
+    2. Memory buffer overflow
+
+3. Warnings:
+
+    

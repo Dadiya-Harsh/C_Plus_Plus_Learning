@@ -1,0 +1,14 @@
+To use input and output we use iostream library.
+
+For output:
+    use, cout  <<
+
+For input: 
+    use, cin >>
+
+For using comments we can use it in 2 ways:
+    Single line comments: //
+    Multiline comments: 
+        /*
+        */
+
